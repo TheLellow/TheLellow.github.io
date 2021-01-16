@@ -1,0 +1,155 @@
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #ecf0f1;
+}
+
+header .navbar {
+  border-radius: 0;
+  margin: 0;
+}
+/*.navbar{
+	background-color: #f1c40f;
+	border-radius: 3px;
+  	border-color: black;
+  	color: #333 !important;
+  	font-family: ‘Indie Flower’, cursive;
+}
+
+.nav > li > a{
+	color: #333 !important;
+  	font-family: ‘Indie Flower’, cursive;
+}
+
+ul.nav.navbar-nav.navbar-right{
+	margin-right:0;
+}
+
+.navbar-brand > img{
+	height:100%;
+}*/
+.daniel-theme{
+  color: #2c3e50;
+  background-color: #f1c40f;
+}
+nav.dm-nav-menu{
+	height: 180px;
+	width: 100%;
+	background: url(../img/navbarbg5.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+
+
+a.dm-navbar-brand > img{
+	max-height: 140px;
+}
+
+nav.dm-nav-menu > ul > li{
+	display: inline-block;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    
+}
+
+.hero {
+	background-image: url(../img/toronto.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding: 50px 0;
+	min-height: 600px;
+	position: relative;
+	background-attachment: fixed;
+}
+
+.hero-content {
+  position: relative;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+}
+
+.hero-content h2 {
+  color: #ecf0f1;
+  font-size: 80px;
+}
+
+.hero-content p {
+  color: #ecf0f1;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.hero-content .btn {
+  border-radius: 3px;
+  border-color: black;
+  padding: 20px 30px;
+  background-color: #f1c40f;
+  color: black;
+} 
+
+.lellow {
+	background-image: url(../img/toronto.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding: 50px 0;
+	min-height: 350px;
+	position: relative;
+	background-attachment: fixed;
+}
+
+.lellow-content h2 {
+  color: #ecf0f1;
+  font-size: 40px;
+}
+.lellow-content h1 {
+  color: #ecf0f1;
+  font-size: 20px;
+}
+.slider
+{
+    width: 100px;
+    background-color: black;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+th {
+    color: #2c3e50;
+    background-color: #f1c40f;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+td {
+  background-color: #3498db;
+  color: #ecf0f1;
+}
+
+main {
+  min-height: 500px;
+  padding: 50px 0;
+} 
+
+footer {
+  padding: 30px 0;
+  font-size: 14px;
+  color: #2c3e50;
+  background: #f1c40f;
+  text-align: center;
+}

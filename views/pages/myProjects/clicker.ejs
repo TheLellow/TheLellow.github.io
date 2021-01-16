@@ -1,0 +1,46 @@
+<%- contentFor('clicker') %>
+<script src="../p5/libraries/p5.js" type="text/javascript"></script>
+
+<script src="../p5/libraries/p5.dom.js" type="text/javascript"></script>
+<script src="../p5/libraries/p5.sound.js" type="text/javascript"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+<script src="../p5/clicker.js" type="text/javascript"></script>
+<body>
+	<hr>
+	<div align="center">
+		<h1>Clicker Master</h1>
+		<h2>How To Play:</h2>
+		<p> You have 30 seconds to click the button "CLICK ME" as many times as you can. <br>
+		Once the time is up the buttom will be disabled and can enter your name and <br>
+		submit your score, but only the top 10 scores will be displayed. <br>
+		When you are ready you can click "PLAY" to start the game. <br> Note:
+		"PLAY" is also the restart button. 
+		</p>
+	</div>
+	<div id="game" align="center">
+		
+	</div>
+	<div id="play" align="center">
+		
+	</div>
+	<div id="click" align="center">
+		
+	</div>
+	<div id="player" align="center">
+		
+	</div>
+	<div class="w3-center">
+		<h1>Leaderboard</h1>
+		<h3>Top 10 Clickers</h3>
+	</div>
+	<hr>
+	<div align="center">
+		<table id="scorelist">
+			<tr>
+				<th>Name</th>
+   				<th>Score</th>
+			</tr>
+		</table>
+	<hr>
+	</div>
+  </body>

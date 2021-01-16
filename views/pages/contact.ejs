@@ -1,0 +1,53 @@
+<%- contentFor('contact') %>
+<section class="lellow">
+  <div class="lellow-content">
+  <h2 class="w3-center">Contact Information</h2>
+  <h1 class="w3-center"><em>I'd love your feedback!</em></h1>
+
+
+  </div>
+</section>
+
+  
+  
+
+  <div class="w3-content w3-container w3-padding-64">
+    <div class="w3-content w3-container w3-padding-64">
+      <div class="w3-large w3-margin-bottom">
+      </div>
+      <form id="contact-form">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input id="inputName" class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input id="inputEmail" class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <textarea id="inputMessage" class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></textarea>
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready ->
+  $('#contact-form').submit (e) ->
+    name = document.getElementById('inputName')
+    email = document.getElementById('inputEmail')
+    message = document.getElementById('inputMessage')
+    if !name.value or !email.value or !message.value
+      alertify.error 'Please check your entries'
+      return false
+    else
+      $.ajax
+        method: 'POST'
+        url: '//formspree.io/daniel.munusami@gmail.com'
+        data: $('#contact-form').serialize()
+        datatype: 'json'
+      e.preventDefault()
+      $(this).get(0).reset()
+      alertify.success 'Message sent'
+  </script>
